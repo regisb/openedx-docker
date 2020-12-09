@@ -197,6 +197,11 @@ ENV SETTINGS tutor.production
 
 {{ patch("openedx-dockerfile") }}
 
+# Add openedx user account
+RUN /usr/sbin/groupadd --gid 200 edx && /usr/sbin/useradd --gid 200 --uid 200 edx 
+RUN /bin/chown -R 200:200 /openedx
+
+USER edx
 # Entrypoint will set right environment variables
 ENTRYPOINT ["docker-entrypoint.sh"]
 
