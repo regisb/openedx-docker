@@ -20,33 +20,35 @@ Commands
 --------
 
 List installed plugins::
-  
+
     tutor plugins list
-    
+
 Enable/disable a plugin::
-  
+
     tutor plugins enable myplugin
     tutor plugins disable myplugin
-    
+
 After enabling or disabling a plugin, the environment should be re-generated with::
-  
+
     tutor config save
-    
+
 .. _existing_plugins:
 
 Existing plugins
 ----------------
 
-- `Course discovery <https://pypi.org/project/tutor-discovery>`__: Deploy an API for interacting with your course catalog
-- `Ecommerce <https://pypi.org/project/tutor-ecommerce>`__: Sell courses and products on your Open edX platform
-- `Figures <https://pypi.org/project/tutor-figures>`__: Visualize daily stats about course engagement
+- `Android application <https://pypi.org/project/tutor-android>`__: Build an Android application for your public Open edX platform.
+- `Course discovery <https://pypi.org/project/tutor-discovery>`__: Deploy an API for interacting with your course catalog.
+- `Ecommerce <https://pypi.org/project/tutor-ecommerce>`__: Sell courses and products on your Open edX platform.
+- `Figures <https://pypi.org/project/tutor-figures>`__: Visualize daily stats about course engagement.
 - `MinIO <https://pypi.org/project/tutor-minio>`__: S3 emulator for object storage and scalable Open edX deployment.
 - `Notes <https://pypi.org/project/tutor-notes>`__:  Allows students to annotate portions of the courseware.
-- `Xqueue <https://pypi.org/project/tutor-xqueue>`__: for external grading
+- `Web UI <https://pypi.org/project/tutor-webui>`__: Remote Tutor administration from a browser.
+- `Xqueue <https://pypi.org/project/tutor-xqueue>`__: for external grading.
 
 Plugin development
 ------------------
- 
+
 .. toctree::
    :maxdepth: 2
 

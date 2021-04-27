@@ -196,13 +196,11 @@ def save(root: str, config: Config) -> None:
     """
     root_env = pathjoin(root)
     for prefix in [
-        "android/",
         "apps/",
         "build/",
         "dev/",
         "k8s/",
         "local/",
-        "webui/",
         VERSION_FILENAME,
         "kustomization.yml",
     ]:

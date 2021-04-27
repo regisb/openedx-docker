@@ -4,6 +4,7 @@ Note: Breaking changes between versions are indicated by "💥".
 
 ## Unreleased
 
+- 💥[Feature] Migrate Android app building and the WebUI frontend away from core Tutor and to a dedicated plugin (see [TEP](https://discuss.overhang.io/c/community/tep/9)).
 - [Feature] Run `docker-compose build` as part of `tutor local start`.
 - 💥[Feature] Upgrade all services to open-release/lilac.master.
 
