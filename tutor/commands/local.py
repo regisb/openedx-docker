@@ -198,6 +198,12 @@ def upgrade_from_juniper(context: click.Context, config: Config) -> None:
     context.invoke(compose.stop)
 
 
+def upgrade_from_koa(context: click.Context, config: Config) -> None:
+    # TODO upgrade mongodb to 4.0
+    # TODO do the same for kubernetes
+    pass
+
+
 local.add_command(quickstart)
 local.add_command(upgrade)
 compose.add_commands(local)

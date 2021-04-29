@@ -2,6 +2,12 @@
 
 Note: Breaking changes between versions are indicated by "💥".
 
+## Unreleased
+
+- 💥[Feature] Migrate Android app building and the WebUI frontend away from core Tutor and to a dedicated plugin (see [TEP](https://discuss.overhang.io/c/community/tep/9)).
+- [Feature] Run `docker-compose build` as part of `tutor local start`.
+- 💥[Feature] Upgrade all services to open-release/lilac.master.
+
 ## v11.2.8 (2021-04-27)
 
 - [Bugfix] Fix parsing of YAML-formatted values in ``config save --set KEY=VALUE`` commands, in use for instance with Ecommerce.

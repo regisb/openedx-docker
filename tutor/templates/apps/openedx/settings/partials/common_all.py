@@ -32,6 +32,13 @@ for store in MODULESTORE["default"]["OPTIONS"]["stores"]:
 # Behave like memcache when it comes to connection errors
 DJANGO_REDIS_IGNORE_EXCEPTIONS = True
 
+# Elasticsearch connection parameters
+ELASTIC_SEARCH_CONFIG = [{
+  {% if ELASTICSEARCH_SCHEME == "https" %}"use_ssl": True,{% endif %}
+  "host": "{{ ELASTICSEARCH_HOST }}",
+  "port": {{ ELASTICSEARCH_PORT }},
+}]
+
 DEFAULT_FROM_EMAIL = ENV_TOKENS.get("DEFAULT_FROM_EMAIL", ENV_TOKENS["CONTACT_EMAIL"])
 DEFAULT_FEEDBACK_EMAIL = ENV_TOKENS.get("DEFAULT_FEEDBACK_EMAIL", ENV_TOKENS["CONTACT_EMAIL"])
 SERVER_EMAIL = ENV_TOKENS.get("SERVER_EMAIL", ENV_TOKENS["CONTACT_EMAIL"])
